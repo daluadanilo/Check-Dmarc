@@ -21,5 +21,6 @@ domain2.com
 domain3.com
 
 Salve o arquivo CSV e execute o seguinte comando
-
+```
  .\check-Dmarc-CSV.ps1 -CsvPath C:\folder\file.csv
+ ```
