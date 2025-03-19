@@ -16,11 +16,8 @@ To check if domains have DMARC policy, you can use the script "check-Dmarc-CSV.p
 Create a CSV file with the first line called "Domain" and below each line you can add the domains to be queried:
 ```
 Domain
-
 domain1.com
-
 domain2.com
-
 domain3.com
 ```
 Save the CSV file and run the following command:
