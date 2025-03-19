@@ -1,18 +1,19 @@
 # Check-Dmarc
-Sript para verificar protocolos Dmarc
-Irá validar a política adotada também, caso esteja em boas práticas.
+Sript to check Dmarc protocols
+It will also validate the adopted policy, if it is in good practice.
 
-# Requisitos
-Prompt do Powershell
+# Requirements
+- Powershell prompt
+- Internet Access
 
-# Como usar
-Execute o comando 
+# How to use
+Run the command
 ```
-./check-dmarc.ps1 -Domain "meudominio.com"
+./check-dmarc.ps1 -Domain "mydomain.com"
 ```
-Para consultar os dominios se tem DMARC policy, poderá usar o script "check-Dmarc-CSV.ps1"
+To check if domains have DMARC policy, you can use the script "check-Dmarc-CSV.ps1"
 
-Crie um arquivo CSV com a primeira linha chamado "Domain" e abaixo de cada linha poderá adicionar os dominios a serem consultados:
+Create a CSV file with the first line called "Domain" and below each line you can add the domains to be queried:
 ```
 Domain
 
@@ -22,7 +23,7 @@ domain2.com
 
 domain3.com
 ```
-Salve o arquivo CSV e execute o seguinte comando
+Save the CSV file and run the following command:
 ```
- .\check-Dmarc-CSV.ps1 -CsvPath C:\folder\file.csv
+ .\check-Dmarc-CSV.ps1 -CsvPath C:\folder\file.csv -OutputCsv C:\folder\result.csv
  ```
